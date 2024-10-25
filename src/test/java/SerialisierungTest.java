@@ -37,6 +37,7 @@ public class SerialisierungTest {
         // Die Elemente müssten für die Serialiserung in eine neue Liste umkopiert werden
         List<String> neueListe = new ArrayList<>(liste);
         System.out.println("Listenelemente wurden in neue Liste kopiert.");
+        System.out.println(neueListe);
     }
 
     @Test

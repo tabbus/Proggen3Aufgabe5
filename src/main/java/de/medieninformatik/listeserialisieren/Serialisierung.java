@@ -6,17 +6,17 @@ import java.util.List;
 
 public class Serialisierung<T> {
 
-    public byte[] serialize(List<T> list) throws IOException {
-        if (list == null) {
+    public byte[] serialize(List<T> liste) throws IOException {
+        if (liste == null) {
             throw new IllegalArgumentException("Liste darf nicht null sein.");
         }
         // Überprüfen, ob die Liste selbst serialisierbar ist
-        if (!(list instanceof Serializable)) {
+        if (!(liste instanceof Serializable)) {
             throw new NotSerializableException("Die Liste ist nicht serialisierbar.");
         }
 
         // Überprüfen, ob jedes Element in der Liste serialisierbar ist
-        for (T item : list) {
+        for (T item : liste) {
             if (!(item instanceof Serializable)) {
                 throw new NotSerializableException("Ein Element der Liste ist nicht serialisierbar: " + item);
             }
@@ -24,10 +24,9 @@ public class Serialisierung<T> {
 
         // Serialisieren der Liste
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
              ObjectOutputStream oos = new ObjectOutputStream(baos)) {
             System.out.println("Jetzt wird serialisert");
-            oos.writeObject(list);
+            oos.writeObject(liste);
             return baos.toByteArray();
         }
     }
