@@ -6,19 +6,20 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Erstellen einer serialisierbaren Liste mit generischen Typen
-        List<String> list = new ArrayList<>();
-        list.add("Test");
-        list.add("Hello");
-        list.add("Serializable List");
+        List<String> liste = new ArrayList<>();
+        liste.add("Test");
+        liste.add("Hello");
+        liste.add("Serializable List");
+
+        System.out.println(liste);
 
         // Erstellen einer Instanz von ListSerializer
         Serialisierung<String> serializer = new Serialisierung<>();
 
         try {
             // Serialisieren der Liste
-            byte[] serializedData = serializer.serialize(list);
+            byte[] serializedData = serializer.serialize(liste);
             System.out.println("Liste wurde erfolgreich serialisiert!");
-            System.out.println(list);
 
             // Deserialisieren der Liste
             List<String> deserializedList = serializer.deserialize(serializedData);
