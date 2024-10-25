@@ -20,7 +20,6 @@ public class Main {
             // Serialisieren der Liste
             byte[] serializedData = serializer.serialize(liste);
             System.out.println("Liste wurde erfolgreich serialisiert!");
-            System.out.println(liste);
 
             // Deserialisieren der Liste
             List<String> deserializedList = serializer.deserialize(serializedData);

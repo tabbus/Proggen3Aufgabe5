@@ -24,8 +24,9 @@ public class Serialisierung<T> {
 
         // Serialisieren der Liste
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
              ObjectOutputStream oos = new ObjectOutputStream(baos)) {
-            System.out.println("Jetzt wird serialisert");
+            System.out.println("Jetzt wird serialisert :D");
             oos.writeObject(liste);
             return baos.toByteArray();
         }
@@ -39,7 +40,7 @@ public class Serialisierung<T> {
 
         try (ByteArrayInputStream bais = new ByteArrayInputStream(data);
              ObjectInputStream ois = new ObjectInputStream(bais)) {
-            System.out.println("Jetzt wird deserialisert");
+            System.out.println("Jetzt wird deserialisert :D");
             return (List<T>) ois.readObject();
         }
     }
