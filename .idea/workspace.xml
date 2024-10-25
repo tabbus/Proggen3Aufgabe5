@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b730874-68ab-4cd1-9386-f5575bc89a15" name="Changes" comment="mit serialize und deserialize und einer nicht serialisierbaren liste ig">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SerialisierungTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
