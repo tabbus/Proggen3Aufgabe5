@@ -1,16 +1,33 @@
 package de.medieninformatik.listeserialisieren;
-
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
-        List<String> beispiel = new ArrayList<>(20);
+        // Erstellen einer serialisierbaren Liste mit generischen Typen
+        List<String> list = new ArrayList<>();
+        list.add("Test");
+        list.add("Hello");
+        list.add("Serializable List");
 
-        // Press Umschalt+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= beispiel.size(); i++) {
+        // Erstellen einer Instanz von ListSerializer
+        Serialisierung<String> serializer = new Serialisierung<>();
 
+        try {
+            // Serialisieren der Liste
+            byte[] serializedData = serializer.serialize(list);
+            System.out.println("Liste wurde erfolgreich serialisiert!");
+            System.out.println(list);
+
+            // Deserialisieren der Liste
+            List<String> deserializedList = serializer.deserialize(serializedData);
+            System.out.println("Liste wurde erfolgreich deserialisiert!");
+
+            // Ausgabe der deserialisierten Liste
+            System.out.println("Deserialisierte Liste: " + deserializedList);
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }

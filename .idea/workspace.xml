@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b730874-68ab-4cd1-9386-f5575bc89a15" name="Changes" comment="aufgabe5 test">
+    <list default="true" id="4b730874-68ab-4cd1-9386-f5575bc89a15" name="Changes" comment="mit serialize und deserialize und einer nicht serialisierbaren liste ig">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SerialisierungTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.SerialisierungTest.testNotSerializableList">
     <configuration name="ListeSerialisieren [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -88,9 +91,84 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SerialisierungTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SerialisierungTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SerialisierungTest.testNotSerializableList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SerialisierungTest.testNotSerializableList&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SerialisierungTest.testSerializeAndDeserialize" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SerialisierungTest.testSerializeAndDeserialize&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SerialisierungTest.testNotSerializableList" />
+        <item itemvalue="Gradle.SerialisierungTest.testSerializeAndDeserialize" />
         <item itemvalue="Gradle.ListeSerialisieren [run]" />
+        <item itemvalue="Gradle.SerialisierungTest" />
       </list>
     </recent_temporary>
   </component>
@@ -111,11 +189,20 @@
       <option name="project" value="LOCAL" />
       <updated>1729862546646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mit serialize und deserialize und einer nicht serialisierbaren liste ig">
+      <option name="closed" value="true" />
+      <created>1729864714084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729864714084</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aufgabe5 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="aufgabe5 test" />
+    <MESSAGE value="mit serialize und deserialize und einer nicht serialisierbaren liste ig" />
+    <option name="LAST_COMMIT_MESSAGE" value="mit serialize und deserialize und einer nicht serialisierbaren liste ig" />
   </component>
 </project>
