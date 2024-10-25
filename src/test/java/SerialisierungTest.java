@@ -1,6 +1,8 @@
 import de.medieninformatik.listeserialisieren.NichtSerialisierteListe;
 import de.medieninformatik.listeserialisieren.Serialisierung;
 import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
 import java.io.NotSerializableException;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,34 +13,40 @@ public class SerialisierungTest {
 
     @Test
     public void testSerializeAndDeserialize() throws Exception {
-        List<String> list = new ArrayList<>();
-        list.add("Test");
-        list.add("Hello");
+        List<String> liste = new ArrayList<>();
+        liste.add("Test");
+        liste.add("Hallo");
 
         Serialisierung<String> serializer = new Serialisierung<>();
-        byte[] data = serializer.serialize(list);
+        byte[] data = serializer.serialize(liste);
 
         List<String> deserializedList = serializer.deserialize(data);
         System.out.println("Liste wurde serialisiert und deserialisert.");
-        assertEquals(list, deserializedList);
-        System.out.println("Ergebnisse stimmen überein: " + list + deserializedList);
+        assertEquals(liste, deserializedList);
+        System.out.println("Ergebnisse stimmen überein: " + liste + deserializedList);
     }
 
     @Test
     public void testNotSerializableList() {
-        List<String> list = new NichtSerialisierteListe<>("A", "B", "C");
+        List<String> liste = new NichtSerialisierteListe<>("A", "B", "C");
 
         Serialisierung<String> serializer = new Serialisierung<>();
-        assertThrows(NotSerializableException.class, () -> serializer.serialize(list));
+        assertThrows(NotSerializableException.class, () -> serializer.serialize(liste));
+        System.out.println("Achtung: Die Liste ist nicht serialisierbar.");
+
+        // Die Elemente müssten für die Serialiserung in eine neue Liste umkopiert werden
+        List<String> neueListe = new ArrayList<>(liste);
+        System.out.println("Listenelemente wurden in neue Liste kopiert.");
     }
 
     @Test
     public void testNonSerializableElement() {
-        List<Object> list = new ArrayList<>();
-        list.add("Serializable Element");
-        list.add(new Object());  // Object ist nicht serialisierbar
+        List<Object> liste = new ArrayList<>();
+        liste.add("Serializable Element");
+        liste.add(new Object());  // Object ist nicht serialisierbar
 
         Serialisierung<Object> serializer = new Serialisierung<>();
-        assertThrows(NotSerializableException.class, () -> serializer.serialize(list));
+        assertThrows(NotSerializableException.class, () -> serializer.serialize(liste));
+        System.out.println("Achtung: Das Element ist nicht serialisierbar.");
     }
 }

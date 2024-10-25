@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b730874-68ab-4cd1-9386-f5575bc89a15" name="Changes" comment="mit serialize und deserialize und einer nicht serialisierbaren liste ig">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SerialisierungTest.java" afterDir="false" />
+    <list default="true" id="4b730874-68ab-4cd1-9386-f5575bc89a15" name="Changes" comment="was bisher geschah - mit tests und allem drum und dran, aber trotzdem irgendwie nicht funktionell">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SerialisierungTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SerialisierungTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,9 +164,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SerialisierungTest.testNotSerializableList" />
+        <item itemvalue="Gradle.SerialisierungTest" />
         <item itemvalue="Gradle.SerialisierungTest.testSerializeAndDeserialize" />
         <item itemvalue="Gradle.ListeSerialisieren [run]" />
-        <item itemvalue="Gradle.SerialisierungTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,12 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1729864714084</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="was bisher geschah - mit tests und allem drum und dran, aber trotzdem irgendwie nicht funktionell">
+      <option name="closed" value="true" />
+      <created>1729866535944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729866535944</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aufgabe5 test" />
     <MESSAGE value="mit serialize und deserialize und einer nicht serialisierbaren liste ig" />
-    <option name="LAST_COMMIT_MESSAGE" value="mit serialize und deserialize und einer nicht serialisierbaren liste ig" />
+    <MESSAGE value="was bisher geschah - mit tests und allem drum und dran, aber trotzdem irgendwie nicht funktionell" />
+    <option name="LAST_COMMIT_MESSAGE" value="was bisher geschah - mit tests und allem drum und dran, aber trotzdem irgendwie nicht funktionell" />
   </component>
 </project>
