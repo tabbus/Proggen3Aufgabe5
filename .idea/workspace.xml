@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b730874-68ab-4cd1-9386-f5575bc89a15" name="Changes" comment="test sollte so funktionieren">
+    <list default="true" id="4b730874-68ab-4cd1-9386-f5575bc89a15" name="Changes" comment="joa fast das gleiche">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/NichtSerialisierteListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/NichtSerialisierteListe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/listeserialisieren/Serialisierung.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SerialisierungTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SerialisierungTest.java" afterDir="false" />
     </list>
@@ -54,20 +56,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Tabea/Studium/5_wise2024_2025/programmierung_3/aufgaben/Aufgabe4/m30971_m30902_14102024/ListeSerialisieren/src/main/java/de/medieninformatik/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Tabea/Studium/5_wise2024_2025/programmierung_3/aufgaben/Aufgabe4/m30971_m30902_14102024/ListeSerialisieren/src/main/java/de/medieninformatik/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.SerialisierungTest">
+}]]></component>
+  <component name="RunManager" selected="Gradle.SerialisierungTest.testNonSerializableElement">
     <configuration name="ListeSerialisieren [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,6 +107,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;SerialisierungTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SerialisierungTest.testNonSerializableElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SerialisierungTest.testNonSerializableElement&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,10 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SerialisierungTest" />
-        <item itemvalue="Gradle.ListeSerialisieren [run]" />
+        <item itemvalue="Gradle.SerialisierungTest.testNonSerializableElement" />
         <item itemvalue="Gradle.SerialisierungTest.testNotSerializableList" />
         <item itemvalue="Gradle.SerialisierungTest.testSerializeAndDeserialize" />
+        <item itemvalue="Gradle.ListeSerialisieren [run]" />
+        <item itemvalue="Gradle.SerialisierungTest" />
       </list>
     </recent_temporary>
   </component>
